@@ -44,7 +44,7 @@ else {
   input.on('data', data =>  hashSum.update(data))
   // making digest
   input.on('end', ()=> {
-    console.log(`${c.white}File "${c.yellow}${file}${c.white}"\nhashType: "${c.yellow}${algorithm}${c.white}"\nHash: ${c.yellow}${hashSum.digest('hex')}${c.white}`)
+    console.log(`${c.white}File "${c.yellow}${file}${c.white}"\n${c.yellow}${algorithm} hash: ${c.magenta}${hashSum.digest('hex')}${c.white}`)
     usage(true)
   })
 }
