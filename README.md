@@ -20,4 +20,7 @@ $ docker build -t hasher .
 ```sh
 $ docker run -v ~/Downloads/myFile.png:/1 --rm hasher /1 sha256
 ```
+### Demo 1 (not containerized app)
 ![](tty.gif)
+### Demo 2 (docker containerized app)
+![](dockerun.gif)
