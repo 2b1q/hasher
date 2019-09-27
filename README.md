@@ -11,7 +11,7 @@ $ node hasher.js my_file sha256
 
 if <hash_type> not passed => <hash_type> = md5
 
-### Use docker container
+### Use docker container without GIT clone
 
 - Pull IMG, Run hasher and remove container
 
@@ -19,7 +19,7 @@ if <hash_type> not passed => <hash_type> = md5
 docker run --rm -v ~/Downloads/20150922120001.mp4:/file 2b1q/hasher /file 'sha256'
 ```
 
-### Use docker container
+### Use GIT and Docker
 
 1. git clone
 
